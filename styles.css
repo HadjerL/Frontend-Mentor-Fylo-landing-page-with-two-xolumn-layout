@@ -34,13 +34,15 @@ ul{
 }
 li a{
     text-decoration: none;
+}
+nav li a{
     color: var(--Very-Dark-Blue);
     position: relative;
 }
-li a:hover{
+nav li a:hover{
     color: var(--Bright-Blue);
 }
-li a::after{
+nav li a::after{
     content: '';
     position: absolute;
     display: block;
@@ -50,7 +52,7 @@ li a::after{
     background-color: var(--Bright-Blue);
     transition: width ease-in-out 250ms;
 }
-li a:hover::after{
+nav li a:hover::after{
     width: 100%;
 }
 
@@ -94,6 +96,15 @@ input{
     border: 1.25px solid var(--Very-Dark-Blue);
     border-radius: 3px;
 }
+.error-message{
+    content:"Please check your email";
+    display: none;
+    margin-top: .25rem;
+    margin-left: 16px;
+    color: var(--white);
+    font-size: small;
+    font-family: 'Open Sans';
+}
 input::placeholder{
     color: var(--Light-Gray);
     font-size: 16px;
@@ -109,6 +120,7 @@ button{
     font-weight: bold;
     border-radius: 3px;
     box-shadow: var(--Light-Gray) 0px 5px 7px;
+    cursor: pointer;
 }
 .team{
     display: flex;
@@ -141,6 +153,7 @@ h3{
     gap: .5rem;
     position: relative;
     padding-bottom: 10px;
+    cursor: pointer;
 }
 .see-more::after{
     content:'';
@@ -197,10 +210,6 @@ h3{
     flex-direction: column;
     gap: 1.5rem;
     text-align: center;
-    /* padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem; */
     padding: 2.05rem;
     background-color: var(--Desaturated-Blue);
 }
@@ -211,6 +220,7 @@ h3{
 .sign-in input{
     margin-left: 1rem;
     margin-right: 1rem;
+    width: 253.083px;
 }
 .sign-in button{
     margin-left: 1rem;
@@ -262,5 +272,80 @@ footer p{
     color: var(--white);
     border: 1px solid var(--white);
 }
-
-
+.fa-brands:hover{
+    color: lightskyblue;
+    border-color: lightskyblue;
+}
+footer a{
+    color: var(--Light-Grayish-Blue);
+}
+@media (min-width: 640px){
+    header{
+        padding: 3rem;
+    }
+    .main{
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        padding: 3rem;
+        row-gap: 18rem;
+        margin-top: -1rem;
+    }
+    .illustration img{
+        max-width: 100%;
+    }
+    section:nth-child(2){
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    section:last-child{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+    }
+    .desc{
+        text-align: left;
+    }
+    h3{
+        text-align: left;
+        font-size:x-large;
+    }
+    .team{
+        align-items: flex-start;
+    }
+    .sign-in{
+        display: grid;
+        grid-template-columns:  50% 50%;
+        text-align: left;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .signin-desc{
+        margin-right: 6rem;
+    }
+    .sign-in h3{
+        margin-bottom: 1rem;
+    }
+    .sign-in input{
+        margin-right: 6rem;
+    }
+    .sign-in button{
+        margin-right: 65%;
+    }
+    footer{
+        padding: 3rem;
+        grid-template-columns: repeat(4,1fr);
+        justify-items: center;
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+    .socials{
+        align-items: flex-start;
+    }
+    #form1{
+        grid-template-columns: 65% 35%;
+    }
+}

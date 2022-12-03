@@ -24,15 +24,17 @@ Users should be able to:
 ___
 ### Screenshots
 ### Desktop
-![Alt text](./images/desktopScreenshot.jpeg)
+<img src="./images/desktopScreenshot.jpeg" width= 400px/>
 
 ### Mobile
-![Alt text](./images/mobileScreenshot.jpeg)
+
+<img src='./images/mobileScreenshot.jpeg' width=300px/>
+
 ___
 ### Links
 
 - [Solution URL](https://github.com/HadjerL/Frontend-Mentor-Fylo-landing-page-with-two-xolumn-layout.git)
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://scintillating-gecko-5a4b89.netlify.app/)
 
 ____
 ![Alt text](./images/My_Process%20(1).png)

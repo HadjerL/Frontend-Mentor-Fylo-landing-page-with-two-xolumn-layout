@@ -6,6 +6,10 @@
 --Very-Dark-Blue: hsl(243, 87%, 12%);
 --Desaturated-Blue: hsl(238, 22%, 44%);
 --white: white;
+--Fennec-red: #B74927;
+--Fennec-beige: #F2EEEA;
+--Fennec-black: #333;
+--Fennec-pink: #F4DDCA;
 }
 *{
     padding: 0;
@@ -15,7 +19,7 @@ html{
     box-sizing: border-box;
 }
 body{
-    background-color: var(--Light-Grayish-Blue);
+    background-color: var(--white);
 }
 header{
     padding: 1.5rem;
@@ -24,7 +28,7 @@ header{
     align-items: center;
 }
 #logo{
-    width: 100px;
+    width: 150px;
 }
 ul{
     display: flex;
@@ -40,7 +44,7 @@ nav li a{
     position: relative;
 }
 nav li a:hover{
-    color: var(--Bright-Blue);
+    color: var(--Fennec-red);
 }
 nav li a::after{
     content: '';
@@ -49,7 +53,7 @@ nav li a::after{
     width: 0;
     height: 2px;
     bottom: -5px;
-    background-color: var(--Bright-Blue);
+    background-color: var(--Fennec-red);
     transition: width ease-in-out 250ms;
 }
 nav li a:hover::after{
@@ -77,13 +81,13 @@ nav li a:hover::after{
 }
 h1{
     font-family: 'Raleway';
-    color: var(--Very-Dark-Blue);
+    color: var(--Fennec-black);
 }
 p{
     font-family: 'Open Sans';
 }
 h1,.features p{
-    color: var(--Very-Dark-Blue);
+    color: var(--Fennec-black);
 }
 .form{
     display:grid;
@@ -93,7 +97,7 @@ input{
     padding-top: .75rem;
     padding-bottom: .75rem;
     padding-left: 1.75rem;
-    border: 1.25px solid var(--Very-Dark-Blue);
+    border: 1.25px solid var(--Fennec-black);
     border-radius: 3px;
 }
 .error-message{
@@ -112,7 +116,7 @@ input::placeholder{
 }
 button{
     color: var(--white);
-    background-color: var(--Bright-Blue);
+    background-color: var(--Fennec-red);
     border: none;
     padding: .75rem;
     font-size: 16px;
@@ -136,15 +140,16 @@ button{
 h3{
     font-family: 'Raleway';
     text-align: center;
-    color: var(--Very-Dark-Blue);
+    color: var(--Fennec-black);
 }
 .team-paragraph{
     font-family: 'Open Sans';
     color: var(--Desaturated-Blue);
 }
-.see-fylo{
-    color: var(--Moderate-Cyan);
+.see-fylo a{
+    color: var(--Fennec-red);
     font-family: 'Raleway';
+    text-decoration: none;
 }
 .see-more{
     display: flex;
@@ -162,10 +167,11 @@ h3{
     width: 100%;
     height: 1px;
     bottom: -5px;
-    background-color: var(--Moderate-Cyan);
+    background-color: var(--Fennec-red);
 }
 
 .quote{
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,7 +182,7 @@ h3{
     padding: 1.75rem;
     max-width: 300px;
     background-color: var(--white);
-    color: var(--Very-Dark-Blue);
+    color: var(--Fennec-black);
 }
 .identity{
     display: flex;
@@ -199,6 +205,7 @@ h3{
 .name{
     font-weight: bold;
     font-family: 'Raleway';
+    color: var(--Fennec-red);
 }
 .profession{
     font-size:11px;
@@ -211,11 +218,14 @@ h3{
     gap: 1.5rem;
     text-align: center;
     padding: 2.05rem;
-    background-color: var(--Desaturated-Blue);
+    background-color: var(--Fennec-pink);
+}
+.sign-up{
+    margin-top: 1rem;
 }
 .get-early, .sign-up{
     font-family: 'Raleway';
-    color: var(--Light-Grayish-Blue);
+    color: var(--Fennec-black);
 }
 .sign-in input{
     margin-left: 1rem;
@@ -229,7 +239,7 @@ h3{
     font-size: 13px;
 }
 footer{
-    background-color: var(--Very-Dark-Blue);
+    background-color: var(--Fennec-black);
     color: var(--Light-Grayish-Blue);
     padding: 3rem;
     display: grid;
@@ -244,6 +254,7 @@ footer p{
     color: var(--Light-Grayish-Blue);
 }
 .fylo{
+    width: 200px;
     margin-bottom: 1rem;
 }
 .contact{
@@ -273,8 +284,8 @@ footer p{
     border: 1px solid var(--white);
 }
 .fa-brands:hover{
-    color: lightskyblue;
-    border-color: lightskyblue;
+    color: var(--Fennec-red);
+    border-color: var(--Fennec-red);
 }
 footer a{
     color: var(--Light-Grayish-Blue);

@@ -28,7 +28,7 @@ header{
     align-items: center;
 }
 #logo{
-    width: 150px;
+    width: 100px;
 }
 ul{
     display: flex;
@@ -40,6 +40,7 @@ li a{
     text-decoration: none;
 }
 nav li a{
+    font-size: 10px;
     color: var(--Very-Dark-Blue);
     position: relative;
 }
@@ -291,8 +292,14 @@ footer a{
     color: var(--Light-Grayish-Blue);
 }
 @media (min-width: 640px){
+    #logo{
+        width: 150px;
+    }
     header{
         padding: 3rem;
+    }
+    nav li a{
+        font-size: 16px;
     }
     .main{
         grid-template-columns: repeat(2,1fr);
